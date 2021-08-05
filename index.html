@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar">
+            <button><i class="fas fa-bars fa-2x"></i></button>
+            <h1>MovieDash</h1>
+            <button><i class="fas fa-search fa-2x"></i></button>
+        </nav>
+    </header>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="btn-close">
+            <i class="fas fa-times fa-2x"></i>
+        </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Upcoming</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <!-- slider -->
+        <div class="slider">
+            <div class="slider-items">
+                <div class="item active">
+                    <img src="images/cover-1.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img src="images/cover-2.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img src="images/cover-3.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <!-- slider controls -->
+            <div class="left-slide"><i class="fas fa-chevron-left"></i></div>
+            <div class="right-slide"><i class="fas fa-chevron-right"></i></div>
+            <!-- slider controls -->
+        </div>
+
+        <!-- Inline slider - Trending -->
+        <div class="inline-slider">
+            <h2>Now Trending</h2>
+            <div class="trending">
+                
+            </div>
+        </div>
+
+        <!-- Inline slider - Movies -->
+        <div class="inline-slider">
+            <h2>Upcoming Movies</h2>
+            <div class="upcoming">
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="js/app.js"></script>
+    <script src="js/fetchapi.js"></script>
+</body>
+</html>
